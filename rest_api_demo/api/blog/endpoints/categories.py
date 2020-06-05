@@ -28,6 +28,15 @@ class CategoryCollection(Resource):
     def post(self):
         """
         Creates a new blog category.
+
+        * Send a JSON object with the new category's name in the request body.
+
+        ```
+        {
+          "name": "New Category Name"
+        }
+        ```
+
         """
         data = request.json
         create_category(data)
@@ -68,6 +77,7 @@ class CategoryItem(Resource):
         return None, 204
 
     @api.response(204, 'Category successfully deleted.')
+    @api.response(409, 'Category not deleted, is in use')
     def delete(self, id):
         """
         Deletes blog category.

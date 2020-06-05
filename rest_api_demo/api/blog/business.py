@@ -29,7 +29,7 @@ def delete_post(post_id):
 
 
 def create_category(data):
-    name = data.get('name')
+    name = data.get('name')[1:]
     category_id = data.get('id')
 
     category = Category(name)

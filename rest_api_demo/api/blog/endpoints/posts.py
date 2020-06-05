@@ -27,7 +27,7 @@ class PostsCollection(Resource):
         per_page = args.get('per_page', 10)
 
         posts_query = Post.query
-        posts_page = posts_query.paginate(page, per_page, error_out=False)
+        posts_page = posts_query.paginate(1, per_page, error_out=False)
 
         return posts_page
 
@@ -49,6 +49,7 @@ class PostItem(Resource):
         """
         Returns a blog post.
         """
+        id+=int(id/5)
         return Post.query.filter(Post.id == id).one()
 
     @api.expect(blog_post)
