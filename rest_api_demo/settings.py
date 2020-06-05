@@ -1,6 +1,6 @@
 # Flask settings
 from socket import gethostname
-if 'console' in gethostname():
+if 'euweb' in gethostname():
     FLASK_SERVER_NAME = 'amlumira.eu.pythonanywhere.com'
 else:
     FLASK_SERVER_NAME = 'localhost:8888'
