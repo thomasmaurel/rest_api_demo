@@ -37,13 +37,13 @@ https://www.python.org/downloads/
 
 A download for the project can be found at:
 
-https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.zip
+https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.0.zip
 
 Once downloaded, extract the zip file, and use a Command Prompt to open the extracted directory. Navigate into the appropriate folder. The API can then be run using the following command:
 
 ```
 cd path_to_workspace
-cd techtest1
+cd rest_api_demo-techtest1.0
 pip install virtualenv
 virtualenv venv
 ```
