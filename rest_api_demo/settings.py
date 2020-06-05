@@ -1,5 +1,9 @@
 # Flask settings
-FLASK_SERVER_NAME = 'localhost:8888'
+from socket import gethostname
+if 'liveconsole' in gethostname():
+    FLASK_SERVER_NAME = 'amlumira.eu.pythonanywhere.com'
+else:
+    FLASK_SERVER_NAME = 'localhost:8888'
 FLASK_DEBUG = True  # Do not use debug mode in production
 
 # Flask-Restplus settings
