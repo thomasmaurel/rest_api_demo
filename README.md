@@ -29,7 +29,7 @@ The software engineers have now finished their initial development and the appli
 
 So that the team can review any bugs found in their application, a simple bug report should be produced as a result of the testing process. This can be in any format you feel is appropriate.
 
-In order to run the application, you need a copy of Python. This can be downloaded from:
+In order to run the application, you need a copy of Python 3. This can be downloaded from:
 
 https://www.python.org/downloads/
 
@@ -39,17 +39,26 @@ A download for the project can be found at:
 
 https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.0.zip
 
-Once downloaded, extract the zip file, and use a Command Prompt to open the extracted directory. Navigate into the appropriate folder. The API can then be run using the following command:
+Once downloaded, extract the zip file, and use a Command Prompt to open the extracted directory. Navigate into the appropriate folder. The API can then be run using the following commands:
 
 ```
 cd path_to_workspace
 cd rest_api_demo-techtest1.0
 pip install virtualenv
-virtualenv venv
 ```
-* On Windows: `venv\Scripts\activate`
-* On Linux/MacOS: `source venv/bin/activate`
 
+* On Windows (if you have both python 2 and python 3 installed, you may need to tell virtualenv which to use):
+```
+virtualenv venv
+venv\Scripts\activate
+```
+
+* On Linux/MacOS: 
+```
+virtualenv -p `which python3` venv
+source venv/bin/activate
+```
+Then, on all systems:
 ```
 (venv) pip install -r requirements.txt
 (venv) python setup.py develop
