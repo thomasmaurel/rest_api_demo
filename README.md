@@ -71,4 +71,4 @@ You will then be able to open the swagger endpoints:
 * https://localhost:8889/api/
 
 Bonus points for:
-- Automating the running of the tests.
+- Automating the running of the tests. You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions.
