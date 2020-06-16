@@ -29,6 +29,7 @@ The software engineers have now finished their initial development and the appli
 
 So that the team can review any bugs found in their application, a simple bug report should be produced as a result of the testing process. This can be in any format you feel is appropriate.
 
+#### Install/setup of the app to test
 In order to run the application, you need a copy of Python 3. This can be downloaded from:
 
 https://www.python.org/downloads/
@@ -70,5 +71,5 @@ You will then be able to open the swagger endpoints:
 * http://localhost:8888/api/
 * https://localhost:8889/api/
 
-Bonus points for:
-- Automating the running of the tests. You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions.
+##Bonus points for:
+- Automating the running of the tests (automation testers only). You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions as part of your submission.
