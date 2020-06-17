@@ -47,6 +47,7 @@ cd path_to_workspace
 cd rest_api_demo-techtest1.1
 pip install virtualenv
 ```
+(if you get errors, try using pip3 instead)
 
 * On Windows (if you have both python 2 and python 3 installed, you may need to tell virtualenv the path to python3 install with -p option):
 ```
@@ -65,6 +66,7 @@ Then, on all systems:
 (venv) python setup.py develop
 (venv) python rest_api_demo/app.py
 ```
+(if you get errors, try using pip3 and python3 instead)
 
 You will then be able to open the swagger endpoints:
 
