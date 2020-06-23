@@ -25,14 +25,23 @@ Your team has been tasked with building a simple back-end for a blog. They have 
 
 There is also a Swagger document which describes the API.
 
+#### Testing report
 The software engineers have now finished their initial development and the application is ready to be tested. Your task is to take the project, run it and test it. Use any testing tools that you think are appropriate for validating this black-box system. You will be evaluated on test coverage, readability and organisation of tests, and suggesting any improvements which could be made to the API.
+
+#### Bug report(s)
 
 So that the team can review any bugs found in their application, a simple bug report should be produced as a result of the testing process. This can be in any format you feel is appropriate.
 
-#### Install/setup of the app to test
+####Automation
+
+If you are applying as an automation tester, please give an example of automating the running of some tests. You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions as part of your submission.
+
+### Install/setup of the app to test
 In order to run the application, you need a copy of Python 3. This can be downloaded from:
 
 https://www.python.org/downloads/
+
+Linux installs may well already have a python 3 install. Some issues have been seen with this test on Ubuntu, where sqllite has not been set up OK, please contact us if you have these issues, or try another platform.
 
 ##### It is recommended that you select the "Add python to path" option in the python installer
 
@@ -68,10 +77,10 @@ Then, on all systems:
 ```
 (if you get errors, try using pip3 and python3 instead)
 
-You will then be able to open the swagger endpoints:
+## And get testing...
+
+You will then be able to open the swagger endpoints  to allow you access to the API documentation which can also be used for manual testing:
 
 * http://localhost:8888/api/
 * https://localhost:8889/api/
 
-##Bonus points for:
-- Automating the running of the tests (automation testers only). You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions as part of your submission.
