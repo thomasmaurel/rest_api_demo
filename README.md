@@ -14,6 +14,10 @@ Your team has been tasked with building a simple back-end for a blog. They have 
 * DELETE /blog/categories/{id} - Deletes blog category
 * GET /blog/categories/{id} - Returns a category with a list of posts
 * PUT /blog/categories/{id} - Updates a blog category
+
+##### Additional endpoints
+The following endpoints also exist to help you test the category endpoints above, but you do not need to provide tests to cover these
+
 * GET /blog/posts/ - Returns list of blog posts
 * POST /blog/posts/ - Creates a new blog post
 * GET /blog/posts/archive/{year}/ - Returns list of blog posts from a specified year
