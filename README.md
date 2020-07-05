@@ -88,3 +88,15 @@ You will then be able to open the swagger endpoints  to allow you access to the 
 * http://localhost:8888/api/
 * https://localhost:8889/api/
 
+## To run the tests:
+
+```
+(venv) python tests/test_endpoints.py
+```
+
+## To run the test coverage:
+
+```
+(venv) coverage run tests/test_endpoints.py
+(venv) coverage report rest_api_demo/api/blog/endpoints/categories.py
+```
